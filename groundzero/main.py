@@ -1,8 +1,8 @@
 # base file to start the application.
 
-from PySide6.QtCore import *
-from PySide6.QtWidgets import *
 import sys
+
+from PySide6.QtWidgets import QMainWindow, QApplication, QToolBar
 
 
 class MainWindow(QMainWindow):
@@ -11,8 +11,11 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("groundzero ui")
         
-        self.statusBar() # call this once to make it go.
-        self.statusBar().showMessage("hllow")
+        self.statusBar() # call this once to make it appear.
+        self.statusBar().showMessage("Welcome to GroundZero")
+
+
+        self.viewMenu = self.menuBar().addMenu("View")
 
         # set up dock widgets (properties viewer, shell, graphs, node toolbox)
 

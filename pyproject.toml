@@ -12,6 +12,8 @@ pyside6 = "^6.4.1"
 scipy = "^1.9.3"
 pandas = "^1.5.2"
 jax = "^0.3.25"
+qtpy = "^2.3.0"
+qtconsole = "^5.4.0"
 
 
 [tool.poetry.group.dev.dependencies]
